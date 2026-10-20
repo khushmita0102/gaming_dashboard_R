@@ -1,0 +1,222 @@
+/* =============================================================================
+   styles.css  —  Gaming Analytics Dashboard
+   Custom styles layered on top of shinydashboard's default AdminLTE theme.
+   ============================================================================= */
+
+/* ── Global ─────────────────────────────────────────────────────────────────── */
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #F4F6F9;
+}
+
+/* ── Dashboard wrapper ───────────────────────────────────────────────────────── */
+.wrapper {
+  background-color: #F4F6F9;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────────────────────────── */
+.main-sidebar {
+  background-color: #1A2332 !important;
+}
+
+.sidebar-menu > li > a {
+  color: #BDC3C7 !important;
+  font-size: 13px;
+  padding: 10px 15px 10px 20px;
+  transition: background 0.2s;
+}
+
+.sidebar-menu > li.active > a,
+.sidebar-menu > li > a:hover {
+  background-color: #2C3E50 !important;
+  color: #FFFFFF !important;
+  border-left: 3px solid #3498DB;
+}
+
+.sidebar-menu > li > a .fa,
+.sidebar-menu > li > a .fas,
+.sidebar-menu > li > a .far {
+  margin-right: 8px;
+}
+
+/* ── Header ──────────────────────────────────────────────────────────────────── */
+.main-header .navbar {
+  background-color: #2980B9 !important;
+}
+
+.main-header .logo {
+  background-color: #1A6FA8 !important;
+  color: #FFFFFF !important;
+}
+
+.main-header .logo:hover {
+  background-color: #2980B9 !important;
+}
+
+/* ── Content wrapper ─────────────────────────────────────────────────────────── */
+.content-wrapper,
+.right-side {
+  background-color: #F4F6F9;
+}
+
+/* ── Value boxes ─────────────────────────────────────────────────────────────── */
+.small-box {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.small-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15) !important;
+}
+
+.small-box h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.small-box p {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.small-box .icon > .fa,
+.small-box .icon > .fas {
+  font-size: 60px;
+  top: 10px;
+}
+
+/* ── Boxes ───────────────────────────────────────────────────────────────────── */
+.box {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08) !important;
+  border-top-width: 3px;
+}
+
+.box-header .box-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2C3E50;
+}
+
+/* ── Banner box (overview description) ──────────────────────────────────────── */
+.banner-box {
+  background: linear-gradient(135deg, #EBF5FB 0%, #FDFEFE 100%);
+  border-left: 5px solid #2980B9;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 4px;
+}
+
+/* ── Insight items ───────────────────────────────────────────────────────────── */
+.insight-item {
+  background-color: #FDFEFE;
+  border-left: 4px solid #27AE60;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  font-size: 14px;
+  color: #2C3E50;
+  line-height: 1.6;
+}
+
+.insight-item:nth-child(even) {
+  border-left-color: #2980B9;
+}
+
+/* ── DataTable tweaks ────────────────────────────────────────────────────────── */
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #D5D8DC;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  border: 1px solid #D5D8DC;
+  border-radius: 4px;
+}
+
+table.dataTable thead th {
+  background-color: #EBF5FB;
+  color: #2C3E50;
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 2px solid #AED6F1;
+}
+
+table.dataTable tbody tr:hover {
+  background-color: #EBF5FB !important;
+}
+
+/* ── Plotly chart containers ─────────────────────────────────────────────────── */
+.js-plotly-plot {
+  border-radius: 6px;
+}
+
+/* ── Slider ──────────────────────────────────────────────────────────────────── */
+.irs--shiny .irs-bar {
+  background-color: #3498DB !important;
+  border-top-color:    #3498DB !important;
+  border-bottom-color: #3498DB !important;
+}
+
+.irs--shiny .irs-handle {
+  background-color: #2980B9 !important;
+  border-color:     #2980B9 !important;
+}
+
+/* ── Radio buttons ───────────────────────────────────────────────────────────── */
+.radio-inline label {
+  color: #2C3E50;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* ── Checkboxes ──────────────────────────────────────────────────────────────── */
+.checkbox label {
+  color: #BDC3C7 !important;
+  font-size: 12px;
+}
+
+/* ── Reset button ────────────────────────────────────────────────────────────── */
+.btn-warning {
+  background-color: #F39C12 !important;
+  border-color:     #D68910 !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+
+.btn-warning:hover {
+  background-color: #D68910 !important;
+}
+
+/* ── Responsive tweaks (narrow screens) ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  .small-box h3 {
+    font-size: 20px;
+  }
+
+  .main-sidebar {
+    transform: translate3d(-260px, 0, 0);
+  }
+}
+
+/* ── Scrollbar styling ───────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F6F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #AED6F1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2980B9;
+}
